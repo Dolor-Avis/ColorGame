@@ -58,6 +58,8 @@ button{
     font-size: inherit;
     color: steelblue;
     transition: all 0.5s;
+    outline: none;
+    margin-right: 0;
 }
 button:hover{
     color: white;
