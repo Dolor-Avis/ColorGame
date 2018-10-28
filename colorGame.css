@@ -1,5 +1,8 @@
 body{
 background-color: #232323;
+    margin: 0;
+    font-family: "Montserrat", monospace;
+    font-weight: 200;
 }
 .square{
     width: 30%;
@@ -8,15 +11,26 @@ background-color: #232323;
     float: left;
     margin: 1.66%;
     border-radius: 20px;
-
+    transition: background-color 0.5s;
+    --webkit-transition: all 0.5s;
+    --moz-transition : all 0.5s
+}
+#colorDisplay{
+    font-size: 200%;
 }
 .container{
+    margin: 10px auto;
     max-width: 600px;
-    margin: 0 auto;
 }
 h1{
     color: white;
     text-align: center;
+    background-color: steelblue;
+    margin: 0;
+    padding: 20px 0;
+    font-weight: 200;
+    text-transform: uppercase;
+    line-height: 1.1;
 }
 span #stripe{
     color: black;
@@ -31,5 +45,25 @@ span #stripe{
     border: 0;
 }
 .selected{
-    background: blue;
+    background-color: steelblue;
+    color: white;
+}
+button{
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: inherit;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: inherit;
+    color: steelblue;
+    transition: all 0.5s;
+}
+button:hover{
+    color: white;
+    background-color: steelblue;
+}
+#message{
+    display: inline-block;
+    width: 33%;
 }
